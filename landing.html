@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac-Man Game</title>
+    <link rel="stylesheet" href="styles/landing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="game-rain">
+        <img src="images/game1.png" alt="" class="rain-image">
+        <img src="images/game2.png" alt="" class="rain-image">
+        <img src="images/game3.png" alt="" class="rain-image">
+        <img src="images/game4.png" alt="" class="rain-image">
+        <img src="images/game1.png" alt="" class="rain-image">
+        <img src="images/game2.png" alt="" class="rain-image">
+        <img src="images/game3.png" alt="" class="rain-image">
+        <img src="images/game4.png" alt="" class="rain-image">
+        <img src="images/game1.png" alt="" class="rain-image">
+        <img src="images/game2.png" alt="" class="rain-image">
+        <img src="images/game3.png" alt="" class="rain-image">
+        <img src="images/game4.png" alt="" class="rain-image">
+        <img src="images/game1.png" alt="" class="rain-image">
+        <img src="images/game2.png" alt="" class="rain-image">
+        <img src="images/game3.png" alt="" class="rain-image">
+        <img src="images/game4.png" alt="" class="rain-image">
+    </div>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="#" class="nav-logo-link">
+                    <img src="images/pacman.svg" alt="Pacoin Logo" class="nav-logo">
+                    <span class="nav-brand-text">PACOIN</span>
+                </a>
+            </div>
+            <div class="navbar-links">
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="#faq">FAQ</a>
+                <a href="https://twitter.com/pacoin" target="_blank" class="nav-social-link">
+                    <svg class="x-icon" width="16" height="16" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                </a>
+                <a href="#buy" class="nav-buy-button">BUY NOW</a>
+                <a href="index.html" class="nav-play-button">PLAY NOW</a>
+            </div>
+            <div class="mobile-menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <div class="pacman-animation">
+                <div class="pacman"></div>
+                <div class="dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <h1>PAC-MAN</h1>
+            <p>CHOMP • EARN • TRADE • REPEAT</p>
+            <div class="coin-info">
+                <h2>PACOIN</h2>
+                <p>Play, earn and trade with the fan made Pac-Man game token!</p>
+                <div class="coin-details">
+                    <div class="detail">
+                        <span>Token Symbol:</span>
+                        <strong>$PAC</strong>
+                    </div>
+                    <div class="detail">
+                        <span>Network:</span>
+                        <strong>Solana</strong>
+                    </div>
+                    <div class="detail contract-detail">
+                        <span>Contract Address:</span>
+                        <div class="contract-address-container">
+                            <a href="https://pump.fun/coin/4WZxDuun88PeHaWg69jazx1zvVELk99mvt8pSXJSpump" target="_blank"
+                                class="contract-address">
+                                4WZxDuun88PeHaWg69jazx1zvVELk99mvt8pSXJSpump
+                            </a>
+                            <button class="copy-button"
+                                onclick="copyToClipboard('4WZxDuun88PeHaWg69jazx1zvVELk99mvt8pSXJSpump')">
+                                <svg class="copy-icon" width="16" height="16" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M16 1H4C2.9 1 2 1.9 2 3v14h2V3h12V1zm3 4H8C6.9 5 6 5.9 6 7v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
+                                </svg>
+                                <span class="copy-tooltip">Copied!</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-section" id="features">
+                <h2>Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card active">
+                        <div class="feature-icon-wrapper">
+                            <img src="images/pacman.svg" alt="Live" class="feature-status-icon">
+                            <span class="status-badge">LIVE</span>
+                        </div>
+                        <h3>Current Features</h3>
+                        <ul>
+                            <li>
+                                <span class="highlight">PACOIN Token</span>
+                                <p>Trade and hold the official fan-made Pac-Man token on Solana</p>
+                            </li>
+                            <li>
+                                <span class="highlight">Classic Pac-Man Game</span>
+                                <p>Play the legendary arcade game reimagined for Web3</p>
+                            </li>
+                            <li>
+                                <span class="highlight">Active Community</span>
+                                <p>Join our growing community of gamers and traders</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card coming-soon">
+                        <div class="feature-icon-wrapper">
+                            <img src="images/compete.png" alt="Coming Soon" class="feature-status-icon">
+                            <span class="status-badge">COMING SOON</span>
+                        </div>
+                        <h3>Tournaments & Rewards</h3>
+                        <ul>
+                            <li>
+                                <span class="highlight">Daily Rewards</span>
+                                <p>Top 10 players earn $PAC tokens every day</p>
+                            </li>
+                            <li>
+                                <span class="highlight">Weekly Championships</span>
+                                <p>Compete with top 20 players for bigger rewards</p>
+                            </li>
+                            <li>
+                                <span class="highlight">Monthly Tournaments</span>
+                                <p>Elite top 50 players battle for massive prizes</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card upcoming">
+                        <div class="feature-icon-wrapper">
+                            <img src="images/dailyrewards.png" alt="Upcoming" class="feature-status-icon">
+                            <span class="status-badge">UPCOMING</span>
+                        </div>
+                        <h3>Future Features</h3>
+                        <ul>
+                            <li>
+                                <span class="highlight">Global Leaderboard</span>
+                                <p>Compete with players worldwide for the top spot</p>
+                            </li>
+                            <li>
+                                <span class="highlight">Special Events</span>
+                                <p>Participate in themed tournaments with bonus rewards</p>
+                            </li>
+                            <li>
+                                <span class="highlight">NFT Integration</span>
+                                <p>Collect and trade unique Pac-Man themed NFTs</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-section" id="about">
+                <h2>About PACOIN</h2>
+                <div class="about-content">
+                    <div class="about-card">
+                        <h3>What is PACOIN?</h3>
+                        <p>PACOIN is a fun and engaging cryptocurrency token created specifically for the legendary
+                            Pac-Man gaming ecosystem. Built on the Solana blockchain, it combines classic arcade gaming
+                            with modern crypto technology.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Fun Token on PumpFun</h3>
+                        <p>Launched exclusively on PumpFun, PACOIN represents a new era of gaming tokens. It's designed
+                            to bring joy and excitement to both Pac-Man enthusiasts and crypto traders alike.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Gaming & Rewards</h3>
+                        <p>Earn PACOIN while playing Pac-Man, compete with other players, and trade your tokens.
+                            Experience the perfect blend of retro gaming and modern cryptocurrency.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3>Community Driven</h3>
+                        <p>Join our growing community of Pac-Man fans and crypto enthusiasts. PACOIN is more than just a
+                            token - it's a community of players, traders, and arcade game lovers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-section" id="faq">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="question-text">What is $PAC Token Utility?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <ul>
+                                <li>In-Game Currency: Use $PAC to unlock special features and power-ups</li>
+                                <li>Tournament Entry: Participate in exclusive tournaments</li>
+                                <li>Rewards: Earn daily, weekly, and monthly rewards based on your performance</li>
+                                <li>Governance: Vote on future game features and development</li>
+                                <li>NFT Integration: Use $PAC to mint and trade Pac-Man themed NFTs</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="question-text">How to Buy $PAC?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <ol>
+                                <li>Create a Solana wallet (Phantom recommended)</li>
+                                <li>Add SOL to your wallet</li>
+                                <li>Visit PumpFun or Raydium platform</li>
+                                <li>Connect your wallet</li>
+                                <li>Swap SOL for $PAC tokens</li>
+                                <li>Confirm transaction and enjoy your tokens!</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="question-text">How to Play Pac-Man?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <ul>
+                                <li>Use arrow keys or WASD to move Pac-Man</li>
+                                <li>Eat all dots while avoiding ghosts</li>
+                                <li>Power pellets make ghosts vulnerable</li>
+                                <li>Collect fruits for bonus points</li>
+                                <li>Complete levels to earn $PAC tokens</li>
+                                <li>Compete on the leaderboard for rewards</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="question-text">Is PACOIN Official?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>PACOIN is a fan-made token and game project. It is not affiliated with or endorsed by
+                                Bandai Namco or the official Pac-Man franchise. We are a community-driven project that
+                                pays homage to the classic arcade game while bringing it into the Web3 era.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span class="question-text">How to Join the Community?</span>
+                            <span class="faq-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <ul>
+                                <li>Follow us on X for latest updates</li>
+                                <li>Participate in community events</li>
+                                <li>Share feedback and suggestions</li>
+                                <li>Help shape the future of PACOIN!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        async function copyToClipboard(text) {
+            try {
+                await navigator.clipboard.writeText(text);
+                const button = document.querySelector('.copy-button');
+                button.classList.add('copied');
+
+                setTimeout(() => {
+                    button.classList.remove('copied');
+                }, 2000);
+            } catch (err) {
+                console.error('Failed to copy text: ', err);
+            }
+        }
+
+        // Mobile Menu Functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const navbarLinks = document.querySelector('.navbar-links');
+
+            mobileMenuButton.addEventListener('click', () => {
+                navbarLinks.classList.toggle('active');
+                mobileMenuButton.classList.toggle('active');
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!mobileMenuButton.contains(e.target) && !navbarLinks.contains(e.target)) {
+                    navbarLinks.classList.remove('active');
+                    mobileMenuButton.classList.remove('active');
+                }
+            });
+
+            // Close menu when clicking on a link
+            const navLinks = navbarLinks.querySelectorAll('a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navbarLinks.classList.remove('active');
+                    mobileMenuButton.classList.remove('active');
+                });
+            });
+        });
+
+        // FAQ Functionality
+        const faqItems = document.querySelectorAll('.faq-question');
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                const isOpen = parent.classList.contains('active');
+
+                // Close all FAQ items
+                document.querySelectorAll('.faq-item').forEach(faqItem => {
+                    faqItem.classList.remove('active');
+                });
+
+                // Open clicked item if it wasn't open
+                if (!isOpen) {
+                    parent.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
